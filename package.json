@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-adsb",
+  "version": "0.1.0",
+  "description": "adsb.lol MCP — live aircraft tracking via community ADS-B.",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "adsb"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-adsb"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
