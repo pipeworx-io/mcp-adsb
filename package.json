@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-adsb",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "adsb.lol MCP — live aircraft tracking via community ADS-B.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-29464eda52a8166a4e447cfbe5cb4a995666b0e2f98f40123c3f2edad9720b26",
-    "sourceCommit": "351c40908821cfecc9bb2f5849d87bbfdbb26d75"
+    "sourceHash": "v1-36ca12b7694e51500ea2eb7cff69cb31cab2d1d11ac0de6d72e352dd5cf00813",
+    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
   }
 }
