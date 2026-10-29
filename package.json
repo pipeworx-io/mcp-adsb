@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-adsb",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "adsb.lol MCP — live aircraft tracking via community ADS-B.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-adsb": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "adsb"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-adsb.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/adsb",
   "pipeworx": {
-    "sourceHash": "v1-36ca12b7694e51500ea2eb7cff69cb31cab2d1d11ac0de6d72e352dd5cf00813",
-    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
+    "mode": "gateway",
+    "slug": "adsb",
+    "gatewaySlug": "adsb",
+    "sourceHash": "v1-9600d5b50e5ce921e4c6666bfbf4e3e276a990e760afaa598e82e329c9ff5465",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
